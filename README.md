@@ -8,9 +8,9 @@ goto public/manifest.json and change the short-name and name, the short-name wil
 
 don't forget to add those meta below on public/index.html inside the header
 
-  <meta name="author" content="author-name">
-  <meta name="keywords" content="keywords">
-  <meta name="description" content="description">
+    <meta name="author" content="author-name">
+    <meta name="keywords" content="keywords">
+    <meta name="description" content="description">
 
 goto src/index.js and change serviceWorker.unregister() to serviceWorker.register()
 
