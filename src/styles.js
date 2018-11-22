@@ -1,6 +1,26 @@
-import styled, { createGlobalStyle } from 'styled-components'
+import styled, { createGlobalStyle } from "styled-components";
+
+/* font-face to add source sans pro font downloaded from google repository and locally installed */
 
 export const GlobalStyle = createGlobalStyle`
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('./assets/fonts/Source_Sans_Pro/SourceSansPro-Bold.ttf');
+  font-weight:bold;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('./assets/fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('./assets/fonts/Source_Sans_Pro/SourceSansPro-SemiBold.ttf');
+  font-weight: 600;
+}
+
 * {
     box-sizing:border-box;
     outline: 0;
@@ -9,11 +29,12 @@ export const GlobalStyle = createGlobalStyle`
 }
 
 body {
-    font-family: 'Source Sans Pro', sans-serif;
-    text-rendering: optimizeLegibility !important;
-    -web-kit-font-smoothing: antialiased !important;
-    background: #f5f5f5;
+  font-family: 'Source Sans Pro', sans-serif;
+  text-rendering: optimizeLegibility !important;
+  -web-kit-font-smoothing: antialiased !important;
+  background: #f5f5f5;
 }
+
 `
 
 export const Header = styled.header`
@@ -23,7 +44,7 @@ export const Header = styled.header`
   color: #fff;
   font-weight: 600;
   display: flex;
-  align-itens: center;
+  align-items: center;
   padding: 10px 20px;
   position: fixed;
   top: 0;
@@ -106,4 +127,17 @@ export const Repositories = styled.ul`
       display: block;
     }
   }
-`
+`;
+export const Offline = styled.div`
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 40px;
+  width: 100%;
+  background: #c15959;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+`;
