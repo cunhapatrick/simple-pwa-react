@@ -1,6 +1,6 @@
 # Description
 The project is a sample experiment pwa created using react, it's running [here](https://pwa-react-sample-1af19.firebaseapp.com/).
-The project basically display a github repository using their api, you have to provide the repository_name/project_name to display, as a pwa application, it can previous projects loaded on the cache of the machine.
+The project basically display a github repository using their api, you have to provide the `repository_name/project_name` to display, as a pwa application, it can previous projects loaded on the cache of the machine.
 
 # Minimal Configuration to construct a PWA in React for mobile on firebase
 
